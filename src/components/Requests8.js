@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { FaCalendarAlt } from 'react-icons/fa';
@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 
 const Requests8=()=>{
+    useEffect(() =>{
+        document.title = 'Вывод - запросы';
+    }, []);
     // kalendar
     const [startDate, setStartDate] = useState(null);
     const handleDateChange = (date) => {

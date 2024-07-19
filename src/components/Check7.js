@@ -1,10 +1,13 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { FaCalendarAlt } from 'react-icons/fa';
 
 
 const Check7=()=>{
+    useEffect(() =>{
+        document.title = 'Проверка';
+    }, []);
     // kalendar
     const [startDate, setStartDate] = useState(null);
     const handleDateChange = (date) => {

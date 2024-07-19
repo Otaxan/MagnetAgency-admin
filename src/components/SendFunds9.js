@@ -1,11 +1,13 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as CloseSvg } from "../images/close.svg"
 
 
 
 const SendFunds9=()=>{
-
+    useEffect(() =>{
+        document.title = 'Вывод - Отправка';
+    }, []);
     // Upload img
     const [selectedImage, setSelectedImage] = useState(null);
     const handleImageChange = (event) => {

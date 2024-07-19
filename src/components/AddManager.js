@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 
-const AddUser2=()=>{
-
+const AddManager=()=>{
+    useEffect(() =>{
+        document.title = 'Добавить менеджера';
+    }, []);
     return(
         <>
             <div className="container">
@@ -41,4 +43,4 @@ const AddUser2=()=>{
     )
 }
 
-export default AddUser2;
+export default AddManager;

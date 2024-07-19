@@ -1,11 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import edit from "../images/edit.png";
 // import del from "../images/delete.png";
 import {Link} from "react-router-dom";
 import {ReactComponent as Close} from "../images/close.svg"
 
 const Settings11 = () => {
-
+  const [activeTab, setActiveTab] = useState('languages');
+  useEffect(() =>{
+    switch (activeTab){
+      case 'languages':
+        document.title = 'Настройки - языки';
+        break;
+      case 'countries':
+        document.title = 'Настройки - страны';
+        break;
+      case 'currencies':
+        document.title = 'Настройки - валюты';
+        break;
+      case 'links':
+        document.title = 'Настройки - ссылки';
+        break;
+      default:
+        document.title = 'Настройки';
+    }
+  })
     // languages
   const [languages, setLanguages] = useState([
     { text: 'Французский', answer: '' },
@@ -175,7 +193,7 @@ const handleEditCurrency = (id) => {
 
 //Switch
 
-  const [activeTab, setActiveTab] = useState('languages');
+  // const [activeTab, setActiveTab] = useState('languages');
   const renderSettings = () => {
     switch (activeTab) {
       case 'languages':

@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as SearchIcon } from "../images/search.svg"
 
 
 const AllUsers1=()=>{
+    useEffect(() =>{
+        document.title = 'Все пользователи';
+    }, []);
     const [users, setUsers] = useState([
         { id: '1', email: 'alexxx@mail.com', telegram: '@alexmank', role: 'пользователь' },
         { id: '2', email: 'john@example.com', telegram: '@john_doe', role: 'пользователь' },

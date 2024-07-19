@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Close } from "../images/close.svg";
 
 
 const AddOffers4=()=>{
-    
+    useEffect(() =>{
+        document.title = 'Добавить Оффера';
+    }, []);
     
     const [selectedValuta, setSelectedValuta] = useState('');
     const handleChange1 = (event) => {

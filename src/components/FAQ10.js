@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // import edit from "../images/edit.png";
 // import del from "../images/delete.png";
 
 const FAQ = () => {
+    useEffect(() =>{
+        document.title = 'FAQ';
+    }, []);
     const [questions, setQuestions] = useState([
         { text: 'Чем занимается наша сеть?', answer: '', isExpanded: false },
         { text: 'Каковы наши основные услуги?', answer: '', isExpanded: false },

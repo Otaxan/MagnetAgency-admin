@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as SearchIcon } from "../images/search.svg"
 
 
 const AllOffers3=()=>{
+    useEffect(() =>{
+        document.title = 'Все Офферы';
+    }, []);
     const [offers, setOffers] = useState([
         { id: '1', title: 'Название оффера', country: 'Франция', bid: '50$', },
         { id: '2', title: 'Название оффера', country: 'Франция', bid: '50$', },

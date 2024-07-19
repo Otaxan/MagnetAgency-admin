@@ -1,7 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 
 const AddUser2=()=>{
+    useEffect(() =>{
+        document.title = 'Добавить пользователя';
+    }, []);
+
+
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
     const options = ["Пользователь", "Аффилиат-менеджер", "Модератор", "СуперАдмин"];
