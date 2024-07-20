@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+import { ReactComponent as SectionIcon } from "../images/forsection.svg";
+
 
 const AddUser2=()=>{
     useEffect(() =>{
@@ -42,7 +44,7 @@ const AddUser2=()=>{
                         <div className="dropdown">
                             <label>Должность</label><br/>
                             <div className="dropdown-header" onClick={toggleDropdown}>
-                            <div className="headdrop"><span>{selectedOption}</span> <span>{isOpen ? '▲' : '▼'}</span></div>
+                            <div className="headdrop"><span>{selectedOption}</span> <span><SectionIcon/></span></div>
                             
                             </div>
                             {isOpen && (

@@ -336,16 +336,16 @@ const handleEditCurrency = (id) => {
                             <input id="file-upload" style={{ display: 'none' }} type="file" accept="image/*" onChange={handleImageChange} />
                               {selectedImage && (
                                 <div className="image-preview">
-                                    <div>
-                                      <img src={selectedImage} alt="" />
-                                    </div>
-                                    <button className="remove-button" onClick={handleImageRemove} style={{ width: '15rem', display: 'flex', justifyContent: 'space-between', color: 'black', marginTop: '14.5rem', background: '#d1faffe0' }}>Отменить <Close/></button>
+                                  <div>
+                                    <img src={selectedImage} alt="" />
+                                  </div>
+                                  <button className="remove-button" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '7px 10px', backgroundColor: 'rgba(234, 236, 239, 1)', color: 'black', marginTop: '9.5rem' }} onClick={handleImageRemove}>Отменить <Close/></button>
                                 </div>
                               )}
                         </div>
                     </div>
                     
-                    <button onClick={handleAddCurrency} style={{ marginTop: '-2rem' }}>Добавить</button>
+                    <button onClick={handleAddCurrency} style={{ marginTop: '-1.5rem' }}>Добавить</button>
                 </div>
             </div>
 

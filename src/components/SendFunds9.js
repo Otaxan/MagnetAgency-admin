@@ -52,7 +52,7 @@ const SendFunds9=()=>{
                         <h4 style={{ marginLeft: '7.7rem' }}>@kmkmoo</h4>
                     </div>
                     <div className="column4" style={{ marginTop: '3rem' }}>
-                        <h4>Чек по операции</h4>
+                        <h4>Чек операции</h4>
                         <div className="image-upload-container">
                             <label htmlFor="file-upload" className="custom-file-upload">
                                 Загрузить
@@ -64,13 +64,13 @@ const SendFunds9=()=>{
                                         <img src={selectedImage} alt="" />
 
                                     </div>
-                                    <button className="remove-button" style={{ display: 'flex', alignItems: 'center', gap: '5rem', marginTop: '14.7rem' }} onClick={handleImageRemove}>Отменить <CloseSvg/> </button>
+                                    <button className="remove-button" onClick={handleImageRemove}>Отменить <CloseSvg/> </button>
                                 </div>
                             )}
                         </div>
                     </div>
                     <Link to="/funds_requests/">
-                    <button style={{ backgroundColor: '#51add5', textAlign: 'left' , width: '18rem', borderRadius: '5px', padding: '10px 1rem', fontSize: '1rem', border: 'none', color: "white", cursor: "pointer" }}>Отправить</button>
+                    <button style={{ backgroundColor: 'rgba(0, 189, 214, 1)', textAlign: 'left' , width: '14rem', borderRadius: '5px', padding: '10px 1rem', fontSize: '1rem', border: 'none', color: "white", cursor: "pointer" }}>Отправить</button>
                     
                     </Link>
                     

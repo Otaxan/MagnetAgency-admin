@@ -127,7 +127,7 @@ const AddOffers4=()=>{
                     <div className="buttons">
                         <Link to="/all_offers/">
 
-                        <button style={{ backgroundColor: '#51add5', textAlign: 'left' , width: '18rem', borderRadius: '5px', padding: '10px 1rem', fontSize: '1rem' }}>Опубликовать</button>
+                        <button style={{ backgroundColor: 'rgba(0, 189, 214, 1)', textAlign: 'left' , width: '14rem', borderRadius: '5px', padding: '10px 1rem', fontSize: '1rem' }}>Опубликовать</button>
                         </Link>
 
                     </div>

@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { FaCalendarAlt } from 'react-icons/fa';
+// import { FaCalendarAlt } from 'react-icons/fa';
+import { ReactComponent as KalenIcon } from '../images/kalen.svg'
 
 
 const Check7=()=>{
@@ -67,7 +68,7 @@ const Check7=()=>{
                                 dateFormat="dd/MM/yyyy"
                                 
                             />
-                            <FaCalendarAlt className="date-picker-icon" />
+                            <KalenIcon className="date-picker-icon" />
                             {/* <button className="clear-button" onClick={clearDate}>
                                 &#x2715;
                             </button> */}
@@ -77,7 +78,7 @@ const Check7=()=>{
                             <select
                             value={selectedOffer}
                             onChange={handleOffersChange}
-                            style={{ height: '1.8rem', fontSize: '14px', border: 'none', outline: 'none', cursor: 'pointer', minWidth: '9rem', background: 'rgba(148, 148, 148, 0.437)' }}
+                            style={{ height: '1.8rem', fontSize: '14px', border: 'none', outline: 'none', cursor: 'pointer', minWidth: '9rem' }}
                             >
                             <option disabled value="">Оффер</option>
                             <option value="Пользователь">Оффер</option>

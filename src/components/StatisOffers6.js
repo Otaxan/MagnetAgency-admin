@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { FaCalendarAlt } from 'react-icons/fa';
+// import { FaCalendarAlt } from 'react-icons/fa';
+import { ReactComponent as KalenIcon } from '../images/kalen.svg'
 
 
 const StatisOffers6=()=>{
@@ -66,7 +67,7 @@ const StatisOffers6=()=>{
                                 dateFormat="dd.MM.yyyy"
                                 
                             />
-                            <FaCalendarAlt className="date-picker-icon" />
+                            <KalenIcon className="date-picker-icon" />
                             {/* <button className="clear-button" onClick={clearDate}>
                                 &#x2715;
                             </button> */}
@@ -76,7 +77,7 @@ const StatisOffers6=()=>{
                             <select
                             value={selectedOffer}
                             onChange={handleOffersChange}
-                            style={{ height: '1.8rem', fontSize: '14px', outline: 'none', cursor: 'pointer', border: 'none', backgroundColor: 'rgba(148, 148, 148, 0.437)' }}
+                            style={{ height: '1.8rem', fontSize: '14px', outline: 'none', cursor: 'pointer', border: 'none' }}
                             >
                             <option disabled value="">Оффер</option>
                             <option value="Оффер1">Оффер1</option>
@@ -89,7 +90,7 @@ const StatisOffers6=()=>{
                             <select
                             value={selectedCountry}
                             onChange={handleCountryChange}
-                            style={{ height: '1.8rem', fontSize: '14px', border: 'none', outline: 'none', cursor: 'pointer', backgroundColor: 'rgba(148, 148, 148, 0.437)' }}
+                            style={{ height: '1.8rem', fontSize: '14px', border: 'none', outline: 'none', cursor: 'pointer' }}
                             >
                             <option value="">Выберите страну</option>
                             <option value="Россия">Россия</option>
@@ -103,7 +104,7 @@ const StatisOffers6=()=>{
                             <select
                             value={selectedValuta}
                             onChange={handleValutaChange}
-                            style={{ height: '1.8rem', fontSize: '14px', outline: 'none', cursor: 'pointer', background: 'rgba(148, 148, 148, 0.437)', border: 'none' }}
+                            style={{ height: '1.8rem', fontSize: '14px', outline: 'none', cursor: 'pointer', border: 'none' }}
                             >
                             <option disabled value="">Выберите валюту</option>
                             <option value="USD">USD</option>
@@ -120,7 +121,7 @@ const StatisOffers6=()=>{
                         <select
                             value={selectedDate}
                             onChange={handleDate1Change}
-                            style={{ height: '1.5rem', width: '10rem', padding: '2px', fontSize: '13px', backgroundColor: 'rgba(148, 148, 148, 0.437)', border: 'none', outline: 'none', cursor: 'pointer', marginTop: '7px' }}
+                            style={{ backgroundColor: 'rgba(234, 236, 239, 1)', border: 'none', width: '10rem', borderRadius: '3px', padding: '5px', outline: 'none', cursor: 'pointer' }}
                             >
                             <option value="Дням">Дням</option>
                             <option value="Месяцам">Месяцам</option>

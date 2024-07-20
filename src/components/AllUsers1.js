@@ -13,18 +13,7 @@ const AllUsers1=()=>{
         { id: '3', email: 'jane@example.com', telegram: '@jane_doe', role: 'пользователь' },
         { id: '4', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
         { id: '5', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-        { id: '6', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-        { id: '7', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-        { id: '8', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-        { id: '9', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-        { id: '10', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-        { id: '11', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-        { id: '12', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-        { id: '13', email: 'smith@example.com', telegram: '@smith', role: 'пользователь' },
-
-
-
-
+ 
     ]);
     const [currentUser, setCurrentUser] = useState(null);
     
